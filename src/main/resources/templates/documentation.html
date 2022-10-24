@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>APIdeas Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1 align="center">APIdea Documentation</h1>
+    <p>Currently the webservice consists of three functions: receiving data for a specific APIdea, all APIdeas, or a random APIdea, and a function to add your own APIdeas. An example of what the response body would look like can be seen below.
+    </p>
+    <p>To receive the shown data, you have to make a HTTP GET call on the resource <i>/apideas/{ID}</i> or <i>/apideas</i> or <i>/apideas/random</i> of this website's IP. To add an APIdea, make a HTTP POST call on the resource /apideas with the data of an APIdea in JSON format in the request body. An ID is required.
+    </p>
+    <div align="center">
+        <p>GET /apideas/random</p>
+        <img th:src="@{/img/Screen Shot 2022-10-23 at 4.40.56 PM.png}"/>
+    </div>
+</body>
+</html>
